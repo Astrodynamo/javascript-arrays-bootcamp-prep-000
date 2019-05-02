@@ -1,5 +1,3 @@
-var evenNumbers = new Array();
-
 var chocolateBars = [
   'snickers',
   'hundred grand',
@@ -8,17 +6,18 @@ var chocolateBars = [
 ]
 
 function addElementToBeginningOfArray() {
-  
+  ['twix', ...chocolateBars];
 }
 
 function destructivelyAddElementToBeginningOfArray() {
-  
+  chocolateBars.unshift('twix');
 }
 
 function addElementToEndOfArray() {
-  
+  [...chocolateBars, 'twix'];
 }
 
 function destructivelyAddElementToEndOfArray() {
-  
+  chocolateBars.push('twix');
 }
+
