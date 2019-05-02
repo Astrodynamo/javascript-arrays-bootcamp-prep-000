@@ -3,23 +3,23 @@ var chocolateBars = [
   'hundred grand',
   'kitkat',
   'skittles'
-]
+];
 
+var moreChocolate = 'twix';
 
-
-function addElementToBeginningOfArray() {
-  ['twix', ...chocolateBars];
+function addElementToBeginningOfArray(chocolateBars, moreChocolate) {
+  [moreChocolate, ...chocolateBars];
 }
 
-function destructivelyAddElementToBeginningOfArray() {
-  chocolateBars.unshift('twix');
+function destructivelyAddElementToBeginningOfArray(chocolateBars, moreChocolate) {
+  chocolateBars.unshift(moreChocolate);
 }
 
-function addElementToEndOfArray() {
-  [...chocolateBars, 'twix'];
+function addElementToEndOfArray(chocolateBars, moreChocolate) {
+  [...chocolateBars, moreChocolate];
 }
 
-function destructivelyAddElementToEndOfArray() {
-  chocolateBars.push('twix');
+function destructivelyAddElementToEndOfArray(chocolateBars, moreChocolate) {
+  chocolateBars.push(moreChocolate);
 }
 
