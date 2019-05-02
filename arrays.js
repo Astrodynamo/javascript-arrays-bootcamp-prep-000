@@ -26,7 +26,7 @@ function destructivelyAddElementToEndOfArray(chocolateBars, moreChocolate) {
 }
 
 function accessElementInArray(chocolateBars, index) {
-  return chocolateBars[0];
+  return chocolateBars[index];
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(chocolateBars) {
@@ -35,8 +35,7 @@ function destructivelyRemoveElementFromBeginningOfArray(chocolateBars) {
 }
 
 function removeElementFromBeginningOfArray(chocolateBars) {
-  chocolateBars.slice(1);
-  return chocolateBars;
+  return chocolateBars.slice(1);
 }
 
 function destructivelyRemoveElementFromEndOfArray(chocolateBars) {
